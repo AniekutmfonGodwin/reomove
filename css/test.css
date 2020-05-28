@@ -1,0 +1,60 @@
+body {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#scroll {
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+#scroll #fake {
+  background-color: navajowhite;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#scroll #fake div {
+  border: 1px solid green;
+  background-color: #016901;
+  width: 100vw;
+  height: 600vw;
+}
+
+#scroll #fake div:nth-child(2n) {
+  background-color: #e7801f;
+}
+
+#clip {
+  width: 98.8vw;
+  position: absolute;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin-right: 16px;
+}
+
+#clip #static {
+  background-color: navajowhite;
+  height: 100vh;
+  width: 600vw;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#clip #static div {
+  padding: 35vh 30vw;
+  border: 1px solid #803a00;
+  background-color: #0b0169;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+#clip #static div:nth-child(2n) {
+  color: #272727;
+  background-color: #dba1c8;
+}

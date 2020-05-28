@@ -1,0 +1,128 @@
+body{
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    margin: 0;
+    padding: 0;
+    // position: relative;
+    
+}
+
+
+#scroll{
+    
+    overflow-y: scroll;
+    overflow-x: scroll;
+
+    #fake{
+    
+        background-color: navajowhite;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        // display: none;
+        flex-wrap: nowrap;
+        
+        
+    
+        div{
+            // transform: rotate(-90deg);
+            
+            border: 1px solid green;
+            background-color: rgb(1, 105, 1);
+            // flex: 1 1 auto;
+            width: 100vw; 
+            height: 600vw; 
+            &:nth-child(2n){
+                background-color: rgb(231, 128, 31);
+            }
+            
+        }
+    
+        
+        
+    }
+}
+
+
+
+
+
+
+// clip
+
+#clip{
+    width: 98.8vw;
+    position: absolute;
+    
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-right: 16px;
+
+    #static{
+    
+        background-color: navajowhite;
+        height: 100vh;
+        width: 600vw;
+        display: flex;
+        // display: none;
+        
+        flex-wrap: nowrap;
+        
+        
+    
+        div{
+            // transform: rotate(-90deg);
+            padding: 35vh 30vw;
+            
+            border: 1px solid rgb(128, 58, 0);
+            background-color: rgb(11, 1, 105);
+            color: white;
+            // flex: 1 1 auto;
+            width: 100vw; 
+            height: 100vh; 
+            &:nth-child(2n){
+                color: rgb(39, 39, 39);
+                background-color: rgb(219, 161, 200);
+            }
+            
+        }
+    
+        
+        
+    }
+}
+
+
+
+
+
+
+// /* One <length> value */
+// gap: 20px;
+// gap: 1em;
+// gap: 3vmin;
+// gap: 0.5cm;
+
+// /* One <percentage> value */
+// gap: 16%;
+// gap: 100%;
+
+// /* Two <length> values */
+// gap: 20px 10px;
+// gap: 1em 0.5em;
+// gap: 3vmin 2vmax;
+// gap: 0.5cm 2mm;
+
+// /* One or two <percentage> values */
+// gap: 16% 100%;
+// gap: 21px 82%;
+
+// /* calc() values */
+// gap: calc(10% + 20px);
+// gap: calc(20px + 10%) calc(10% - 5px);
+
+// /* Global values */
+// gap: inherit;
+// gap: initial;
+// gap: unset;

@@ -1,0 +1,618 @@
+$primary-color:rgb(255, 217, 0);
+$secondary-color:#B3B3B3;
+
+
+
+
+
+
+
+body{
+    overflow-y: auto !important;
+    margin-bottom: -500px;
+    .search{
+      height: 100vh;
+      width: 100vw;
+      background-color: transparentize($primary-color, 0.2);
+      z-index: 2000;
+    }
+}
+
+.my-header{
+  background-image: linear-gradient(90deg, rgb(5, 5, 5), rgba(255, 255, 255, 0)), url(../img/hero.jpg);
+  background-color: linear-gradient(135deg, rgb(46, 46, 46), rgba(250, 250, 250, 0.068));
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  
+}
+
+/* ################ theme ############### */
+
+.bg-black{
+  background-color: black;
+}
+
+
+.my-bg-primary,.bg-primary{
+  &-dark{
+    background-color: darken($color: $primary-color, $amount: 4);
+  }
+  background-color: $primary-color;
+  &--gradient{
+    background-image: linear-gradient(135deg, $primary-color, rgb(246, 246, 226));
+    
+  }
+}
+
+.my-bg-secondary,.my-secondary{
+  background-color:$secondary-color;
+}
+
+.my-text-primary,.text-primary{
+  color: $primary-color;
+}
+.my-text-primary-dark{
+  color: darken($color: $primary-color, $amount: 0)
+}
+
+.my-text-secondary,.my-secondary{
+  color: $secondary-color;
+}
+
+.bg-white{
+  background-color: white;
+}
+.text-grey{
+  color:rgb(156, 156, 156) !important;
+}
+
+
+
+/* ############## padding ################### */
+
+// padding top
+.pt{
+  &-50{
+    padding-top: 50% !important;
+  }
+
+}
+
+/* ############## padding ################### */
+
+// ############### marging  ################
+
+.ml{
+
+  &-50p{
+    margin-left: 50%;
+  }
+  &-40p{
+    margin-left: 40%;
+  }
+}
+
+
+//##################### margin
+
+
+/* ################## typography ####################### */
+.text-x1p5{
+  font-size: 150%;
+}
+.text-x2{
+  font-size: 200%;
+}
+.text-x2p5{
+  font-size: 250%;
+}
+.text-x3{
+  font-size: 300%;
+}
+.text-x3p5{
+  font-size: 350%;
+}
+.text-x4{
+  font-size: 400%;
+}
+
+/* ################## typography ####################### */
+
+
+
+/* ################# shapes for cliping ############################# */
+.shape1{
+  height: 10em;
+  width: 10em;
+  clip-path: url(#triangle1);
+  transform: rotate(33deg);
+  top: 10%;
+  right: 30%;
+  z-index: 1;
+}
+.shape2{
+  height: 10em;
+  width: 10em;
+  clip-path: url(#triangle1);
+  transform: rotate(200deg);
+  top: -8em;
+  left: 10em ;
+  opacity: 30%;
+  z-index: 1;
+}
+
+
+
+.square1{
+  height: 3em;
+  width: 3em;
+  transform: rotate(45deg);
+  bottom: 3.5em;
+  left: 25em;
+  z-index: 1;
+  border-radius: .8em;
+}
+
+.clip1 {
+  margin-bottom: 20px;
+
+  height: 500px;
+  clip-path: url(#cross);
+  /* clip-path: url(../img/resource.svg#cross); */
+  background-color: lightcoral;
+  /* background-image: linear-gradient(45deg, rgba(5, 5, 5, 0.37), rgba(255, 255, 255, 0)), url('../img/beach-316538_1280.jpg'); */
+  background-image: linear-gradient(45deg, rgba(5, 5, 5, 0.37), rgba(255, 255, 255, 0)), url('../img/pete\ merge.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+#cross{
+  width: 100%;
+  
+}
+
+.play-icon{
+    
+    width: 6em;
+    z-index: 5; 
+    top: 5em;
+    left: -2.5em;   
+}
+
+.pill-box{
+    
+      padding:6em 4em;
+      top:5em;
+      right:4.5em;
+      z-index:-2;
+      background-color:#FFFF00;
+      border-radius: 4em;
+      
+}
+
+/* ################## typography################ */
+
+
+/* ################### spacing####### */
+.spacer{
+  &-x1{
+    margin-top: 150px;
+  }
+}
+
+
+// #############  boder radius ######################
+
+.round-x1{
+  border-radius: 1rem !important;
+}
+
+
+
+
+
+/* ####################### media queries ######################## */
+
+@media (min-width: 576px) {
+    .play-icon{
+    
+        width: 8em;
+        z-index: 5; 
+        top: 6.4em;
+        left: -2.5em;   
+  }
+  .pill-box{
+    
+    padding:8em 5em;
+    top:5em;
+    right:6em;
+    z-index:-2;
+    background-color:#FFFF00;
+    border-radius: 6em;
+    
+}
+  }
+  
+  @media (min-width: 768px) {
+    .play-icon{
+    
+        width: 5em;
+        z-index: 5; 
+        top: 20%;
+        left: -1.5em;   
+  }
+  .pill-box{
+    
+    padding:5em 3em;
+    top:4em;
+    right:3.5em;
+    z-index:-2;
+    background-color:#FFFF00;
+    border-radius: 6em;
+    
+}
+
+  }
+  
+  @media (min-width: 992px) {
+    .play-icon{
+    
+        width: 6em;
+        z-index: 5; 
+        top: 30%;
+        left: -2.5em;   
+  }
+  .pill-box{
+    
+    padding:7em 4em;
+    top:5em;
+    right:5.5em;
+    z-index:-2;
+    background-color:#FFFF00;
+    border-radius: 6em;
+    
+}
+  }
+  
+  @media (min-width: 1200px) {
+    .play-icon{
+    
+        width: 6em;
+        z-index: 5; 
+        top: 40%;
+        left: -2.5em;   
+  }
+
+  .pill-box{
+    
+    padding:9em 6em;
+    top:5em;
+    right:6em;
+    z-index:-2;
+    background-color:#FFFF00;
+    border-radius: 6em;
+    
+}
+
+
+
+
+  }
+
+
+  // ######################## icons
+  i.icon{
+
+    &.icon{
+      &-cup{
+        &::after{
+          content: url(../font/svgs/custom/SVG/cup.svg);
+          
+        }
+      }
+      &-cloud{
+        &::after{
+          content: url(../font/svgs/custom/SVG/cloud.svg)
+        }
+      }
+    }
+  }
+
+
+
+  // ##################icons end
+
+
+#Layer_1{
+    width: inherit;
+    height: inherit;
+}
+#playsvg{
+    width: inherit;
+    height: inherit;
+}
+
+
+.sec5__card-icon--bg{
+  transition: all .4s ease-in-out;
+  right: 0.6em;
+  top: 1.6em;
+  z-index: -1;
+  &.hover{
+    padding: 3em !important;
+    right: 0em;
+    top: 0em;
+
+  }
+}
+
+
+
+
+
+
+
+.sec6{
+  .elevate{
+    transition: all ease-in-out 0.3s;
+    transform: translate(0,-20px);
+    z-index: 3000;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.2);
+  }
+  &__heading{
+    font-weight: 500;
+    &--border{
+      width: 7em;
+      border-bottom: 5px solid $primary-color;
+      top: 5em;
+      right: 44em;
+    }
+  }
+  &__card-select-btn--bg{
+    background-color: rgb(20, 20, 31);
+    color: white;
+    font-size: 1.2rem;
+    &:hover{
+      background-color: rgb(37, 37, 49);
+      color: white;
+      font-size: 1.2rem;
+    }
+  }
+  &__bg{
+    &-skew{
+      transform: skewY(-5deg);
+      height: 30em;
+      opacity: 0.3;
+    }
+  }
+  & .main.card{
+    width: 20rem;
+      border: none !important;
+      cursor: pointer;
+     
+  }
+  & .pricing{
+    margin-top: -22em;
+  }
+  & .list-group-item{
+    border: none;
+    padding: .4rem 1.25rem;
+    &.opacity{
+      opacity: 0.2;
+      
+    }
+  }
+  
+}
+
+
+.sec7{
+  width: 99vw;
+  .triangle{
+    // height: 2rem;
+    width: 5% !important;
+    transform: rotate(-90deg);
+    top: 18em;
+    right: 2em;
+    z-index: -1;
+    
+    border-radius: 2rem;
+    & i::before{
+      content: url(../font/svgs/custom/SVG/triangle.svg);
+    }
+    
+    
+  }
+  .custom-card{
+    width:fit-content;
+    height: fit-content;
+  }
+  .custom-card-media{
+    max-width: 220px;
+    width: 200%;
+    height: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+  }
+  .custom-card-content{
+    text-align: center;
+    padding-left: 3rem;
+  }
+&__bg{
+  height: 45%;
+  width: 100%;
+  z-index: -1;
+  bottom: 0;
+  // margin-left: 5px;
+   /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 0 0 2rem 0;
+  
+}
+
+}
+
+
+
+
+.sec8{
+
+  margin-top: 10em;
+  .slider-nav{
+      top: 14.8em;
+      left: -3em;
+      z-index: 100;
+      button{
+      padding: .5em 1em;
+      margin-top: 1em;
+      background-color: $secondary-color;
+      border-width: 0;
+      &:hover{
+        background-color: $primary-color;
+        }
+      }
+    }
+
+.card .card-body .mb-0.my-text-secondary{
+  font-size: 0.1em !important;  
+}
+
+  .slide{
+    
+    background-color: transparent;
+*{
+  background-color: transparent;
+}
+    
+  }
+  .card{
+    // box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.2);
+    
+    margin: 0 1rem;
+    border-radius: 1rem;
+    border-width: 0;
+    img.round{
+      border-radius: 1rem 1rem 0 0;
+    }
+  }
+  
+  &__sec-title--border{
+    width: 8%;
+    height: 8px;
+    top: -10px; 
+    background-color: $primary-color;
+    }
+}
+
+
+section .title h1{
+  font-size: 3em !important;
+  font-weight: 700;
+}
+
+
+.sec9{
+  .my-card{
+    width: 20em;
+    height: fit-content;
+  }
+  .custom-card-media{
+    height: 100px;
+    width: 100px;
+    margin-left: 30%;
+    background-position: center;
+    background-size: cover;
+  }
+  .custom-card-content{
+    font-size: large;
+    font-weight: 500;
+  }
+}
+
+
+.sec10,.search{
+  .circle{
+    &1{
+    background-image: linear-gradient(135deg, $primary-color, rgb(246, 246, 226));
+    height: 8em;
+    width: 8em;
+    clip-path: circle(4em at 4em 4em);
+    z-index: 2000 !important;
+    left:25em;
+    }
+    &2{
+      background-color: lighten($color: #20252a, $amount: 5%);;
+      height: 12em;
+      width: 12em;
+      clip-path: circle(6em at 6em 6em);
+      z-index: 2000 !important;
+      left:70em;
+      top: 10em;
+      }
+    &3{
+      background-color: lighten($color: #20252a, $amount: 5%);;
+      height: 5em;
+      width: 5em;
+      clip-path: circle(2.5em at 2.5em 2.5em);
+      z-index: 2000 !important;
+      left:2em;
+      top: 21em;
+      }
+  }
+  .yellow-bg-offset{
+    clip-path: polygon(0 20%,20% 0,80% 0,100% 20%,100% 100%,0 100%);
+    z-index: -3;
+    bottom: -8em;
+    padding-top: 7em;
+    width: 100vw;
+    height: 30em;
+  }
+  .border-width{
+    border-width: 0.2rem !important;
+  }
+  .newletter,.search-input{
+   
+    padding-bottom: 2rem;
+    label{
+      transition: all ease-in-out 0.4s;
+      color: rgb(114, 114, 114) ;
+    }
+    ._label{
+      transition: all ease-in-out 0.4s;
+      transform: translate(0,50px);
+      font-size: 200%;
+      
+    }
+    input,textarea {
+      background-color: transparent !important;
+      border: transparent;
+      border-bottom: 4px solid $primary-color;
+      width: 75%;
+      color: white;
+      font-size: 250%;
+      margin-bottom: .6em;
+      outline: 0;
+    }
+  }
+   .bg{
+    clip-path: polygon(0 80px,100% 0,100% 100%,0 100%);
+    background-color: #041322;
+    height: fit-content;
+    min-height: 100vh;
+    min-width: 100vw;
+    
+    .text-white.my-head{
+      padding-top: 10em ;
+      padding-bottom: 5em ;
+    }
+   
+  }
+}
+
